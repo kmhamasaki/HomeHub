@@ -37,18 +37,20 @@
 					return;
 				}
 				// get all rows that have matching email (should be at most one bc emails are unique)
-				String sql = "SELECT * FROM Users WHERE email='" + email + "';";
-				ps = conn.prepareStatement(sql);
-				rs = ps.executeQuery();
-				String registered = "false";
-				// if there is a valid row, means user is already registered
-				if (rs.next()) {
-					registered = "true";
-				}
-				response.setHeader("registered", registered);
-        response.setContentType("text/html;charset=UTF-8");
+                String sql = "SELECT * FROM Users WHERE email='" + email + "';";
+                ps = conn.prepareStatement(sql);
+                rs = ps.executeQuery();
+                String registered = "false";
+                String houseName = "null";
+                // if there is a valid row, means user is already registered
+                if (rs.next()) {
+                    registered = "true";
+                    houseName = rs.getString("houseName");
+                }
+                response.setHeader("registered", registered);
+       response.setContentType("text/html;charset=UTF-8");
 
-        response.getWriter().print(registered);
+       response.getWriter().print(registered + "-" + houseName);
 
 				System.out.println("User GET successful!");
 			} catch (SQLException sqle) {

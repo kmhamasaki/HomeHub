@@ -66,29 +66,32 @@
 				//document.getElementById("HomeSignIn").style.color = "white";
 				var email = profile.getEmail();
 				
-			    $.ajax({
-			    	  type: "GET",
-			    	  url: "User",
-			    	  data: {
-							email: email
-						},
-			    	  success: function( data ) {
-			    	  if(data =="false")
-			    		  {
-			    		  	location.href='register.jsp';
-			    		  }
-			    	  else
-			    	  {
-			    		  location.href='schedule.jsp'
-			    	  }
-			    	  
-			    	  
-			    	  
-			    	  },
-			    	  error:function(data,status,er) {
-			    		    alert("error: "+data+" status: "+status+" er:"+er);
-			    		   }
-			    	});
+				$.ajax({
+                    type: "GET",
+                    url: "User",
+                    data: {
+                          email: email
+                      },
+                    success: function( data ) {
+                    if(data =="false-null")
+                        {
+                            location.href='register.jsp';
+                        }
+                    else
+                    {
+                        var allData = data.split("-");
+                        var house = allData[1];
+                        sessionStorage.setItem('house', house);
+                        location.href='schedule.jsp'
+                    }
+                    
+                    
+                    
+                    },
+                    error:function(data,status,er) {
+                          alert("error: "+data+" status: "+status+" er:"+er);
+                         }
+                  });
 				
 			} else {
 				//console.log("Signed out");
