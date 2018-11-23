@@ -1,15 +1,12 @@
-# HomeHub
 ![alt text](https://github.com/kmhamasaki/HomeHub/blob/master/homehub.png)
 
-## Kristyn Hamasaki, Alex Baker, Maegan Chew, Nikita Takru, Prathik Rao, Nicholas Wang
+### Kristyn Hamasaki, Alex Baker, Maegan Chew, Nikita Takru, Prathik Rao, Nicholas Wang
 
 # Table of Contents
 
-High-Level Requirements
-Technical Specifications
-Detailed Design
-Testing
-Deployment
+## High-Level Requirements
+## Technical Specifications
+## Deployment
 
 # High-Level Project Specifications
 
@@ -47,8 +44,10 @@ Each user will have access to a schedule page on the app which will display all 
 A user will receive an in-app notification at the beginning of the week when the task is assigned. They will also receive a reminder notification one day before the task is due. At the end of the week, everyone will receive a notification of who completed their tasks. So, if a user did not do their task, all their household members will be notified. This incentivises everyone to do their chores on time. 
 
 # Technical Project Specifications
-### Hardware Requirements: 
+
+### Hardware Requirements
 HomeHub will run on a standard laptop or desktop computer on Google Chrome updated to the latest update.
+
 ## Database 
 We will use a SQL database to store all data associated with out web app.
 
@@ -66,7 +65,7 @@ Primary key username (varchar(30))
 Foreign Key taskID (int(2))
 
 ## Server
-We will use out server to interact with out SQL Database
+We will use our server to interact with out SQL Database
 ### Getting data
 The server will retrieve the associated household information when a user logs in using the username which is the primary key in out User table.
 ### Posting data
