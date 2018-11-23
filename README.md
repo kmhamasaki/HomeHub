@@ -4,11 +4,11 @@
 
 # Table of Contents
 
-## High-Level Requirements
+## [High Level Requirements](#high-level-project-specifications)
 ## Technical Specifications
 ## Deployment
 
-# High-Level Project Specifications
+# High Level Project Specifications
 
 Our web app is a way for suitemates to clearly communicate with each other regarding recurring household tasks. Right now, many suitemates do not complete their weekly chores and one individual has to take charge as the aggressive leader. The majority of people also use handwritten charts which are proven to be ineffective. With HomeHub, we automate the process in an app and allow all users to coexist in a peaceful manner.
 
