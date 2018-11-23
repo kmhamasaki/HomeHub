@@ -5,7 +5,7 @@
 # Table of Contents
 
 ## [High Level Requirements](#high-level-project-specifications)
-## Technical Specifications
+## [Technical Specifications] (#technical-project-specifications)
 ## Deployment
 
 # High Level Project Specifications
