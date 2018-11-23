@@ -108,8 +108,6 @@ Tomcat 9.0
 
 JDBC
 
-From a high level perspective, we can deploy our application with the following steps:
-
 ## High Level
 1) Open Eclipse with Tomcat and MySQL
 2) Clone Homehub from GitHub and import into the Eclipse workspace.
