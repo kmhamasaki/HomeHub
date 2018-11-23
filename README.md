@@ -1,5 +1,5 @@
 # HomeHub
-![alt text](https://github.com/kmhamasaki/HomeHub/blob/master/homehub.jpg)
+![alt text](https://github.com/kmhamasaki/HomeHub/blob/master/homehub.png)
 
 ## Kristyn Hamasaki, Alex Baker, Maegan Chew, Nikita Takru, Prathik Rao, Nicholas Wang
 
