@@ -105,6 +105,7 @@ Once the files have been downloaded from GitHub, the web application will run on
 
 ### Deployment Dependencies
 Tomcat 9.0
+
 JDBC
 
 From a high level perspective, we can deploy our application with the following steps:
